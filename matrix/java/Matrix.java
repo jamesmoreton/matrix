@@ -1,4 +1,4 @@
-package matricies.java;
+package matrix.java;
 
 import java.util.Arrays;
 import java.util.Random;
