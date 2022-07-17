@@ -78,8 +78,8 @@ public class Matrix<T> {
   }
 
   /**
-   * Sets all {@code null} {@link Matrix} coordinates to the specified {@code value}, filling the
-   * {@link Matrix}.
+   * Sets all {@code null} elements in this {@link Matrix} to the specified {@code value}, filling
+   * the {@link Matrix}.
    *
    * @param value value to fill the {@link Matrix}
    * @return the updated {@link Matrix}
@@ -245,7 +245,7 @@ public class Matrix<T> {
   }
 
   /**
-   * Prints this {@Matrix}.
+   * Prints this {@link Matrix}.
    *
    * <p>E.g.</p>
    * <p>[[1, 1, 1], [1, 1, 1], [1, 1, 1]]</p>
@@ -255,7 +255,7 @@ public class Matrix<T> {
   }
 
   /**
-   * Pretty prints this {@Matrix}.
+   * Pretty prints this {@link Matrix}.
    *
    * <p>E.g.</p>
    * <p>[1, 1, 1]</p>
@@ -284,7 +284,8 @@ public class Matrix<T> {
 
   private void validateDimension(int dimension) {
     if (dimension < 1) {
-      throw new IllegalArgumentException("Matrix dimension %s must be greater than 0");
+      throw new IllegalArgumentException(
+          String.format("Matrix dimension %s must be greater than 0", dimension));
     }
   }
 
